@@ -1,4 +1,4 @@
-# Strong Portfolio for Swathi
+# Strong Portfolio
 
 A modern, responsive portfolio website built with Next.js 15, showcasing Koduri Venkata Swathi's expertise in Artificial Intelligence and Machine Learning.
 
