@@ -1,85 +1,40 @@
-# Koduri Venkata Swathi - Portfolio Website
+# Strong Portfolio for Swathi
 
-A modern, responsive portfolio website built with Next.js 15, showcasing AI & Machine Learning projects, skills, and professional experience.
+A modern, responsive portfolio website built with Next.js 15, showcasing Koduri Venkata Swathi's expertise in Artificial Intelligence and Machine Learning.
 
-## 🌟 Features
+## 🚀 Features
 
-- **Modern Design**: Clean, professional layout with smooth animations
-- **Dark/Light Mode**: Toggle between themes with persistent preference
+- **Modern Design**: Clean, professional layout with gradient backgrounds and smooth animations
+- **Dark/Light Mode**: Toggle between themes with persistent preference storage
 - **Responsive**: Fully responsive design that works on all devices
 - **Interactive Sections**: 
   - Hero section with professional photo and social links
   - About me with career objectives
   - Skills showcase with progress indicators
-  - Project portfolio with live demos and code links
-  - Professional experience timeline
+  - Project portfolio with hover effects and external links
+  - Experience timeline
   - Certifications and achievements
   - Contact form with email integration
 - **Performance Optimized**: Built with Next.js 15 for optimal performance
-- **SEO Friendly**: Proper meta tags and semantic HTML structure
+- **Accessibility**: WCAG compliant with proper ARIA labels and semantic HTML
 
-## 🚀 Tech Stack
+## 🛠️ Tech Stack
 
 - **Framework**: Next.js 15 (App Router)
-- **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **UI Components**: shadcn/ui
 - **Icons**: Lucide React
-- **Email Service**: Resend (for contact form)
-- **Deployment**: Vercel (recommended)
-
-## 📦 Installation & Setup
-
-### Prerequisites
-
-- Node.js 18+ installed on your system
-- npm or yarn package manager
-
-### Local Development
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/portfolio.git
-   cd portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. **Set up environment variables** (Optional - for contact form)
-   
-   Create a `.env.local` file in the root directory:
-   ```env
-   RESEND_API_KEY=your_resend_api_key_here
-   ```
-
-4. **Add your resume**
-   
-   Place your resume PDF file in the `public` folder as `resume.pdf`
-
-5. **Run the development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-6. **Open your browser**
-   
-   Navigate to [http://localhost:3000](http://localhost:3000)
+- **Email**: Resend API integration
+- **Deployment**: Vercel
+- **Language**: TypeScript
 
 ## 📁 Project Structure
 
 ```
-portfolio/
-├── app/                    # Next.js App Router
-│   ├── globals.css        # Global styles
+├── app/                    # Next.js app directory
 │   ├── layout.tsx         # Root layout
-│   └── page.tsx           # Home page
+│   ├── page.tsx           # Home page
+│   └── globals.css        # Global styles
 ├── components/            # React components
 │   ├── ui/               # shadcn/ui components
 │   ├── about.tsx         # About section
@@ -91,111 +46,112 @@ portfolio/
 │   ├── header.tsx        # Navigation header
 │   ├── hero.tsx          # Hero section
 │   ├── projects.tsx      # Projects showcase
-│   ├── skills.tsx        # Skills section
-│   └── theme-provider.tsx # Theme context
+│   └── skills.tsx        # Skills section
 ├── actions/              # Server actions
-│   └── send-email.ts     # Contact form handler
+│   └── send-email.ts     # Email sending logic
 ├── public/               # Static assets
-│   ├── images/           # Project and personal images
-│   └── resume.pdf        # Your resume file
+│   ├── images/           # Project and profile images
+│   └── resume.pdf        # Resume file
 ├── lib/                  # Utility functions
 └── hooks/                # Custom React hooks
 ```
 
-## 🎨 Customization
+## 🚀 Getting Started
 
-### Personal Information
+### Prerequisites
 
-1. **Update personal details** in `components/hero.tsx`:
-   - Name, title, description
-   - Social media links (GitHub, LinkedIn)
-   - Professional photo
+- Node.js 18+ installed
+- npm or yarn package manager
 
-2. **Modify about section** in `components/about.tsx`:
-   - Career objectives
-   - Personal background
+### Installation
 
-3. **Update skills** in `components/skills.tsx`:
-   - Add/remove technical skills
-   - Adjust proficiency levels
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/Portfolio.git
+   cd Portfolio
+   ```
 
-### Projects
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Update your projects in `components/projects.tsx`:
-- Project descriptions
-- Technologies used
-- Live demo links
-- GitHub repository links
-- Project images
+3. **Set up environment variables**
+   Create a `.env.local` file in the root directory:
+   ```env
+   RESEND_API_KEY=your_resend_api_key_here
+   ```
 
-### Experience & Education
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-Modify `components/experience.tsx` to include:
-- Work experience
-- Education background
-- Internships
-
-### Contact Information
-
-Update contact details in `components/contact.tsx` and `components/footer.tsx`
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 📧 Contact Form Setup
 
 To enable the contact form functionality:
 
-1. **Sign up for Resend**
-   - Visit [resend.com](https://resend.com)
-   - Create an account and get your API key
+1. Sign up for a [Resend](https://resend.com) account
+2. Get your API key from the Resend dashboard
+3. Add the API key to your `.env.local` file
+4. Update the email address in `actions/send-email.ts`
 
-2. **Add environment variable**
-   \`\`\`env
-   RESEND_API_KEY=your_actual_api_key_here
-   \`\`\`
+## 🎨 Customization
 
-3. **Update email settings** in `actions/send-email.ts`:
-   - Change the recipient email to your email address
-   - Customize email templates if needed
+### Personal Information
+- Update personal details in `components/hero.tsx`
+- Replace the profile photo in `public/images/swathi-photo.jpeg`
+- Update the resume file at `public/resume.pdf`
+
+### Projects
+- Add project images to `public/images/`
+- Update project details in `components/projects.tsx`
+- Add GitHub repository links
+
+### Skills & Experience
+- Modify skills in `components/skills.tsx`
+- Update experience timeline in `components/experience.tsx`
+- Add certifications in `components/certifications.tsx`
+
+### Styling
+- Customize colors in `tailwind.config.ts`
+- Modify component styles in individual component files
+- Update global styles in `app/globals.css`
+
+## 📱 Sections Overview
+
+1. **Hero**: Introduction with profile photo and social links
+2. **About**: Career objectives and personal introduction
+3. **Skills**: Technical skills with proficiency levels
+4. **Projects**: Featured projects with descriptions and links
+5. **Experience**: Professional experience timeline
+6. **Certifications**: Academic and professional certifications
+7. **Achievements**: Hackathons, research papers, and awards
+8. **Contact**: Contact form and information
 
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
-
-1. **Push to GitHub**
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
-
-2. **Deploy to Vercel**
-   - Visit [vercel.com](https://vercel.com)
-   - Import your GitHub repository
-   - Add environment variables in Vercel dashboard
-   - Deploy!
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Add environment variables in Vercel dashboard
+4. Deploy automatically on every push
 
 ### Other Platforms
+```bash
+npm run build
+npm start
+```
 
-The portfolio can also be deployed to:
-- Netlify
-- Railway
-- DigitalOcean App Platform
-- AWS Amplify
-
-## 📱 Available Scripts
+## 📄 Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
-- `npm run type-check` - Run TypeScript compiler
-
-## 🎯 Performance Features
-
-- **Image Optimization**: Next.js automatic image optimization
-- **Code Splitting**: Automatic code splitting for optimal loading
-- **SEO Optimized**: Meta tags and structured data
-- **Accessibility**: WCAG compliant with proper ARIA labels
-- **Core Web Vitals**: Optimized for Google's Core Web Vitals
 
 ## 🤝 Contributing
 
@@ -205,25 +161,7 @@ The portfolio can also be deployed to:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is open source and available under the [MIT License](LICENSE).
 
-## 📞 Contact
-
-**Koduri Venkata Swathi**
-- Email: venkataswathi74@gmail.com
-- LinkedIn: [venkata-swathi-koduri-74726a299](https://www.linkedin.com/in/venkata-swathi-koduri-74726a299)
-- GitHub: [Swathi97054](https://github.com/Swathi97054)
-
-## 🙏 Acknowledgments
-
-- [Next.js](https://nextjs.org/) for the amazing framework
-- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
-- [shadcn/ui](https://ui.shadcn.com/) for the beautiful UI components
-- [Lucide](https://lucide.dev/) for the icon library
-- [Vercel](https://vercel.com/) for hosting and deployment
-
----
-
-⭐ If you found this portfolio helpful, please give it a star!
