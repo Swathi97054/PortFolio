@@ -2,10 +2,6 @@
 
 A modern, responsive portfolio website built with Next.js 15, showcasing AI & Machine Learning projects, skills, and professional experience.
 
-![Portfolio Preview](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-
 ## 🌟 Features
 
 - **Modern Design**: Clean, professional layout with smooth animations
@@ -42,35 +38,35 @@ A modern, responsive portfolio website built with Next.js 15, showcasing AI & Ma
 ### Local Development
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/your-username/portfolio.git
    cd portfolio
-   \`\`\`
+   ```
 
 2. **Install dependencies**
-   \`\`\`bash
+   ```bash
    npm install
    # or
    yarn install
-   \`\`\`
+   ```
 
 3. **Set up environment variables** (Optional - for contact form)
    
    Create a `.env.local` file in the root directory:
-   \`\`\`env
+   ```env
    RESEND_API_KEY=your_resend_api_key_here
-   \`\`\`
+   ```
 
 4. **Add your resume**
    
    Place your resume PDF file in the `public` folder as `resume.pdf`
 
 5. **Run the development server**
-   \`\`\`bash
+   ```bash
    npm run dev
    # or
    yarn dev
-   \`\`\`
+   ```
 
 6. **Open your browser**
    
@@ -78,7 +74,7 @@ A modern, responsive portfolio website built with Next.js 15, showcasing AI & Ma
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 portfolio/
 ├── app/                    # Next.js App Router
 │   ├── globals.css        # Global styles
@@ -104,7 +100,7 @@ portfolio/
 │   └── resume.pdf        # Your resume file
 ├── lib/                  # Utility functions
 └── hooks/                # Custom React hooks
-\`\`\`
+```
 
 ## 🎨 Customization
 
@@ -165,11 +161,11 @@ To enable the contact form functionality:
 ### Vercel (Recommended)
 
 1. **Push to GitHub**
-   \`\`\`bash
+   ```bash
    git add .
    git commit -m "Initial commit"
    git push origin main
-   \`\`\`
+   ```
 
 2. **Deploy to Vercel**
    - Visit [vercel.com](https://vercel.com)
