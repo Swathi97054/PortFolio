@@ -39,12 +39,12 @@ export function Hero() {
               </p>
             </div>
 
-            <div className="flex flex-row items-center gap-3 flex-wrap">
+            <div className="flex flex-wrap gap-4">
               <Button
                 variant="outline"
                 size="sm"
-                className="flex items-center gap-2 bg-transparent whitespace-nowrap"
-                asChild
+                className="flex items-center gap-2 bg-transparent"
+                asChild // Use asChild to pass props to the underlying a tag
               >
                 <a href="https://github.com/Swathi97054" target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4" />
@@ -55,20 +55,16 @@ export function Hero() {
               <Button
                 variant="outline"
                 size="sm"
-                className="flex items-center gap-2 bg-transparent whitespace-nowrap"
-                asChild
+                className="flex items-center gap-2 bg-transparent"
+                asChild // Use asChild to pass props to the underlying a tag
               >
-                <a
-                  href="https://www.linkedin.com/in/venkata-swathi-koduri-74726a299"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.linkedin.com/in/venkata-swathi-koduri-74726a299" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4" />
                   LinkedIn
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </Button>
-              <Button size="sm" className="flex items-center gap-2 whitespace-nowrap" asChild>
+              <Button size="sm" className="flex items-center gap-2" asChild>
                 <a href="/resume.pdf" download="Koduri_Venkata_Swathi_Resume.pdf">
                   <Download className="w-4 h-4" />
                   Download Resume
