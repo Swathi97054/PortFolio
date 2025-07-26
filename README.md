@@ -67,7 +67,7 @@ A modern, responsive portfolio website built with Next.js 15, showcasing Koduri 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/Portfolio.git
+   git clone https://github.com/Swathi97054/PortFolio
    cd Portfolio
    ```
 
