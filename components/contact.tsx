@@ -73,7 +73,7 @@ export function Contact() {
                 </Button>
                 <Button variant="outline" size="sm" className="flex items-center gap-2 bg-transparent" asChild>
                   <a
-                    href="www.linkedin.com/in/venkata-swathi-koduri-74726a299"
+                    href="https://www.linkedin.com/in/venkata-swathi-koduri-74726a299"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
